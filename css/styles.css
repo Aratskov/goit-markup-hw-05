@@ -282,9 +282,14 @@ h1,h2,h3{
 }
 
 .background-icon{
-    background-color: var(--background-team);
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
     margin-bottom: 30px;
+
+    background-color: var(--background-team);
+    
 }
 
 .features .item .icon{
@@ -379,6 +384,7 @@ h1,h2,h3{
 
 .team .wrapper{
     padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -393,6 +399,7 @@ h1,h2,h3{
 
 .team-job{
     margin: 0;
+    margin-bottom: 16px;
     
     font-size: 16px;
     line-height: 1.19;
@@ -404,7 +411,7 @@ h1,h2,h3{
 
 .social{
     display: inline-flex;
-    padding: 16px 32px 30px 32px;
+    padding:0 32px;
     margin: 0;
 }
 
@@ -525,6 +532,7 @@ h1,h2,h3{
 
 .footer-cont{
     display: flex;
+    align-items: baseline;
 }
 
 .social-footer{
@@ -543,6 +551,10 @@ h1,h2,h3{
 .social-logo{
     display: inline-flex;
     margin-top: 20px;
+}
+
+.social-logo li:not(:last-child){
+    margin-right: 10px;
 }
 
 .social-logo .social-link{
@@ -635,7 +647,6 @@ h1,h2,h3{
 }
 
 .meta{
-    width: 370px;
     padding: 20px 24px;
 
     text-align: start;
